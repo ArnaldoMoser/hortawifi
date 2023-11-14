@@ -18,16 +18,22 @@
     <button id="toggleButton" onclick="toggle()">Ligar</button>
 
     <script>
-        function toggle() {
-            var button = document.getElementById("toggleButton");
-            if (button.innerHTML === "Ligar") {
-                button.innerHTML = "Desligar";
-                // Adicione aqui o código que você quer executar quando o botão é ligado
-            } else {
-                button.innerHTML = "Ligar";
-                // Adicione aqui o código que você quer executar quando o botão é desligado
-            }
-        }
+       function toggle() {
+    var button = document.getElementById("toggleButton");
+    if (button.innerHTML === "Ligar") {
+        button.innerHTML = "Desligar";
+        // Código para gerar e salvar um arquivo JSON
+        var jsonData = { status: "ligado" };
+        var jsonString = JSON.stringify(jsonData);
+        console.log(jsonString); // Você pode fazer algo mais útil com essa string
+    } else {
+        button.innerHTML = "Ligar";
+        // Código para gerar e salvar um arquivo JSON
+        var jsonData = { status: "desligado" };
+        var jsonString = JSON.stringify(jsonData);
+        console.log(jsonString); // Você pode fazer algo mais útil com essa string
+    }
+}
     </script>
 
 </body>
