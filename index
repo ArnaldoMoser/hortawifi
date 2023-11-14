@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotÃ£o Liga/Desliga</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BotÃ£o Liga/Desliga</h1>
+
+    <button id="toggleButton" onclick="toggle()">Ligar</button>
+
+    <script>
+        function toggle() {
+            var button = document.getElementById("toggleButton");
+            if (button.innerHTML === "Ligar") {
+                button.innerHTML = "Desligar";
+                // Adicione aqui o cÃ³digo que vocÃª quer executar quando o botÃ£o Ã© ligado
+            } else {
+                button.innerHTML = "Ligar";
+                // Adicione aqui o cÃ³digo que vocÃª quer executar quando o botÃ£o Ã© desligado
+            }
+        }
+    </script>
+
+</body>
+</html>
